@@ -13,12 +13,14 @@ namespace CustomerLibraryTest
 		[TestInitialize]
 		public void LeadInitialization()
 		{
-			lead = new Lead();
-			lead.CustomerName = "Bilel BELHADJ";
-			lead.PhoneNumber = "0123456789";
-			lead.BillAmount = 0;
-			lead.BillDate = DateTime.Now;
-			lead.Address = "16 Rue de Provence, 94230 Cachan";
+			lead = new Lead
+			{
+				CustomerName = "Bilel BELHADJ",
+				PhoneNumber = "0123456789",
+				BillAmount = 0,
+				BillDate = DateTime.Now,
+				Address = "16 Rue de Provence, 94230 Cachan"
+			};
 		}
 
 		[TestMethod]
@@ -111,12 +113,14 @@ namespace CustomerLibraryTest
 		[TestInitialize]
 		public void CustomerInitialization()
 		{
-			customer = new Customer();
-			customer.CustomerName = "Bilel BELHADJ";
-			customer.PhoneNumber = "0634938557";
-			customer.BillAmount = 0;
-			customer.BillDate = DateTime.Now;
-			customer.Address = "16 Rue de Provence, 94230 Cachan";
+			customer = new Customer
+			{
+				CustomerName = "Bilel BELHADJ",
+				PhoneNumber = "0634938557",
+				BillAmount = 0,
+				BillDate = DateTime.Now,
+				Address = "16 Rue de Provence, 94230 Cachan"
+			};
 		}
 
 		[TestMethod]
@@ -202,4 +206,41 @@ namespace CustomerLibraryTest
 		[TestCleanup]
 		public void CustomerCleanup() => customer = null;
 	}
+
+	[TestClass]
+	public class CustomerBaseTest
+	{
+		private CustomerBase customer;
+		private CustomerBase lead;
+
+		[TestInitialize]
+		public void CustomerBaseInitialization()
+		{
+			customer = new Customer
+			{
+				CustomerName = "Bilel BELHADJ",
+				PhoneNumber = "0634938557",
+				BillAmount = 0,
+				BillDate = DateTime.Now,
+				Address = "16 Rue de Provence, 94230 Cachan"
+			};
+
+			lead = new Lead
+			{
+				CustomerName = "Bilel BELHADJ",
+				PhoneNumber = "0123456789",
+				BillAmount = 0,
+				BillDate = DateTime.Now,
+				Address = "16 Rue de Provence, 94230 Cachan"
+			};
+		}
+
+		[TestCleanup]
+		public void CustomerBaseCleanup()
+		{
+			customer = null;
+			lead = null;
+		}
+	}
 }
+

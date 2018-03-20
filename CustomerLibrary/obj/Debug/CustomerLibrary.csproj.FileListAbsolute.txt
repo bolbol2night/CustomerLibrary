@@ -1,0 +1,6 @@
+C:\Users\USER\Source\Repos\CustomerLibrary\CustomerLibrary\bin\Debug\CustomerLibrary.dll
+C:\Users\USER\Source\Repos\CustomerLibrary\CustomerLibrary\bin\Debug\CustomerLibrary.pdb
+C:\Users\USER\Source\Repos\CustomerLibrary\CustomerLibrary\obj\Debug\CustomerLibrary.csprojResolveAssemblyReference.cache
+C:\Users\USER\Source\Repos\CustomerLibrary\CustomerLibrary\obj\Debug\CustomerLibrary.csproj.CoreCompileInputs.cache
+C:\Users\USER\Source\Repos\CustomerLibrary\CustomerLibrary\obj\Debug\CustomerLibrary.dll
+C:\Users\USER\Source\Repos\CustomerLibrary\CustomerLibrary\obj\Debug\CustomerLibrary.pdb
